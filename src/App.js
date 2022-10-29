@@ -69,8 +69,8 @@ function App() {
   const handleExchange =() =>{
     setWallets({
       ...wallets,
-      [walletFrom.name] : Math.round(wallets[walletFrom.name] - amountFrom),
-      [walletTo.name] : Math.round(+wallets[walletTo.name] + amountTo),
+      [walletFrom.name] : Math.round(+wallets[walletFrom.name] - (+amountFrom)),
+      [walletTo.name] : Math.round(+wallets[walletTo.name] + (+amountTo)),
     })
     setAmountFrom(0)
     setAmountTo(0)
