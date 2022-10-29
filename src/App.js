@@ -38,6 +38,11 @@ function App() {
     }else{
       setErrorBalance(null);
     }
+    if(valueFrom<0){
+      setAmountFrom(0);
+      setAmountTo(0);
+      return;
+    }
     setAmountFrom(valueFrom);
     setAmountTo(valueFrom*rate);
   }
@@ -51,15 +56,21 @@ function App() {
     }else{
       setErrorBalance(null);
     }
+    if(valueFrom<0){
+      setAmountFrom(0);
+      setAmountTo(0);
+      return;
+    }
     setAmountFrom(valueFrom/rate);
     setAmountTo(valueFrom);
+    
   }
 
   const handleExchange =() =>{
     setWallets({
       ...wallets,
-      [walletFrom.name] : wallets[walletFrom.name] - amountFrom,
-      [walletTo.name] : +wallets[walletTo.name] + amountTo,
+      [walletFrom.name] : Math.round(wallets[walletFrom.name] - amountFrom),
+      [walletTo.name] : Math.round(+wallets[walletTo.name] + amountTo),
     })
     setAmountFrom(0)
     setAmountTo(0)
@@ -136,7 +147,7 @@ function App() {
             </p>
           )}
           </div>
-          <button disabled={errorBalance ||walletFrom.name===walletTo.name} onClick={handleExchange}  className={`${errorBalance ||walletFrom.name===walletTo.name ? 'cursor-not-allowed bg-gray-600 ' :''} w-full uppercase  text-white font-semibold bg-green-500 py-4 rounded-lg`}>Exchange</button>
+          <button disabled={errorBalance || walletFrom.name===walletTo.name} onClick={handleExchange}  className={` w-full uppercase  text-white font-semibold bg-green-500 py-4 rounded-lg ${errorBalance ||walletFrom.name===walletTo.name ? 'cursor-not-allowed bg-gray-600 ' :''}`}>Exchange</button>
         </div>
     </div>
    );

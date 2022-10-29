@@ -1,7 +1,7 @@
 {
   "name": "currency-exchange",
   "version": "0.1.0",
-  "homepage": "https://PCTai.github.io/react-gh-pages",
+  "homepage": "https://PCTai.github.io/currentcy-exchange",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
