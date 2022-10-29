@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/currentcy-exchange/static/css/main.af6f88e6.css",
-    "main.js": "/currentcy-exchange/static/js/main.661b4bf1.js",
+    "main.css": "/currentcy-exchange/static/css/main.6f47a0f7.css",
+    "main.js": "/currentcy-exchange/static/js/main.ccfd206d.js",
     "static/js/787.32d25ab6.chunk.js": "/currentcy-exchange/static/js/787.32d25ab6.chunk.js",
     "index.html": "/currentcy-exchange/index.html",
-    "main.af6f88e6.css.map": "/currentcy-exchange/static/css/main.af6f88e6.css.map",
-    "main.661b4bf1.js.map": "/currentcy-exchange/static/js/main.661b4bf1.js.map",
+    "main.6f47a0f7.css.map": "/currentcy-exchange/static/css/main.6f47a0f7.css.map",
+    "main.ccfd206d.js.map": "/currentcy-exchange/static/js/main.ccfd206d.js.map",
     "787.32d25ab6.chunk.js.map": "/currentcy-exchange/static/js/787.32d25ab6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af6f88e6.css",
-    "static/js/main.661b4bf1.js"
+    "static/css/main.6f47a0f7.css",
+    "static/js/main.ccfd206d.js"
   ]
 }
